@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3001"
+  baseURL: "https://pharmacy-backend-3-70rx.onrender.com"
 });
 
 export const getMedicines = () => api.get("/medicines");
