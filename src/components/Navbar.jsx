@@ -55,13 +55,12 @@ function Navbar() {
               </Link>
             </>
           )}
-
-          {user && (
-            <Link to="/logout">
-              Logout
-            </Link>
-          )}
-
+{user && (
+  <>
+    <Link to="/orders">Orders</Link>
+    <Link to="/logout">Logout</Link>
+  </>
+)}
         </div>
 
       </div>

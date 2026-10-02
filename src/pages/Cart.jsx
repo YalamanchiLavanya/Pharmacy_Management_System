@@ -12,7 +12,10 @@ import {
   clearCart
 } from "../features/cartSlice";
 
-import { createOrder } from "../services/api";
+import {
+  createOrder,
+  getOrders
+} from "../services/api";
 
 function Cart() {
 
@@ -90,8 +93,27 @@ function Cart() {
         return;
       }
 
+      // Get existing orders
+      const ordersResponse =
+        await getOrders();
+
+      const orders =
+        ordersResponse.data;
+
+      // Generate next numeric order ID
+      const numericIds = orders
+        .map((order) => Number(order.id))
+        .filter((id) => !isNaN(id));
+
+      const nextId =
+        numericIds.length > 0
+          ? Math.max(...numericIds) + 1
+          : 1;
+
       // Create order object
       const order = {
+
+        id: nextId,
 
         userId: user.id,
 

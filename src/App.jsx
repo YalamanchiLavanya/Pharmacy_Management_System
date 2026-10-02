@@ -15,6 +15,7 @@ import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 
 import ProtectedRoute from "./routes/ProtectedRoute";
+import Orders from "./pages/orders";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
           path="/logout"
           element={<Logout />}
         />
+        <Route path="/orders" element={<Orders/>}/>
 
       </Routes>
 

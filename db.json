@@ -514,6 +514,62 @@
       "status": "Placed",
       "orderDate": "2026-10-01T14:05:51.122Z",
       "id": "HVEZiHZol38"
+    },
+    {
+      "userId": "H08vSSYnoaU",
+      "customerName": "Lavanya Yalamanchi",
+      "customerEmail": "lavanyayalamanchi2005@gmail.com",
+      "items": [
+        {
+          "medicineId": "3",
+          "medicineName": "Cetirizine",
+          "quantity": 1,
+          "price": 35
+        },
+        {
+          "medicineId": "2",
+          "medicineName": "Amoxicillin",
+          "quantity": 1,
+          "price": 120
+        }
+      ],
+      "totalItems": 2,
+      "totalAmount": 155,
+      "paymentMethod": "netbanking",
+      "status": "Placed",
+      "orderDate": "2026-10-02T05:17:21.352Z",
+      "id": "WMfAOOAAGQI"
+    },
+    {
+      "id": "N32vlWGYJ_I",
+      "userId": "H08vSSYnoaU",
+      "customerName": "Lavanya Yalamanchi",
+      "customerEmail": "lavanyayalamanchi2005@gmail.com",
+      "items": [
+        {
+          "medicineId": "2",
+          "medicineName": "Amoxicillin",
+          "quantity": 1,
+          "price": 120
+        },
+        {
+          "medicineId": "5",
+          "medicineName": "Vitamin C",
+          "quantity": 1,
+          "price": 90
+        },
+        {
+          "medicineId": "6",
+          "medicineName": "Azithromycin",
+          "quantity": 1,
+          "price": 150
+        }
+      ],
+      "totalItems": 3,
+      "totalAmount": 360,
+      "paymentMethod": "cod",
+      "status": "Placed",
+      "orderDate": "2026-10-02T05:21:53.032Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
